@@ -1,21 +1,95 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="grade-calculator.js"></script>
+    <link rel="stylesheet" href="grade-calculator.css">
     <title>Grade Calculator</title>
   </head>
 
   <body>
-    <div class="jumbotron">
-      <h1 class="display-3">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </p>
-</div>
+    <!--Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">Grade Calculator</h1>
+        <p class="lead">Calculate your grade in any class based on how you've performed and how you predict you will perform in the future </p>
+      </div>
+    </div>
+    <!-- End of Jumbotron -->
+    <div class="col-md-6">
+      <h2>Change to user input</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>Percentage of Grade Worth</th>
+              <th>Grade recieved</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <form>
+                      <input list="aspects" name="aspects">
+                      <datalist id="aspects">
+                        <option value="Exams">
+                        <option value="Homework">
+                        <option value="Attendance">
+                        <option value="Term paper(s)">
+                        <option value="Quizzes">
+                        <option value="Final Exam">
+                        <option value="Lab">
+                    </datalist>
+                </form>
+              </td>
+              <td>Change to user percentage</td>
+              <td>Change to user input</td>
+            </tr>
+            <tr>
+              <td>
+                <form>
+                      <input list="aspects" name="aspects">
+                      <datalist id="aspects">
+                        <option value="Exams">
+                        <option value="Homework">
+                        <option value="Attendance">
+                        <option value="Term paper(s)">
+                        <option value="Quizzes">
+                        <option value="Final Exam">
+                        <option value="Lab">
+                    </datalist>
+                </form>
+              </td>
+              <td>Change to user percentage</td>
+              <td>Change to user input</td>
+            </tr>
+            <tr>
+              <td>
+                <form>
+                      <input list="aspects" name="aspects">
+                      <datalist id="aspects">
+                        <option value="Exams">
+                        <option value="Homework">
+                        <option value="Attendance">
+                        <option value="Term paper(s)">
+                        <option value="Quizzes">
+                        <option value="Final Exam">
+                        <option value="Lab">
+                    </datalist>
+                </form>
+              </td>
+              <td>Change to user percentage</td>
+              <td>Change to user input</td>
+            </tr>
+            <tr>
+              <td>Predicted Grade</td>
+              <td>Change to calculated output</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
   </body>
 
 </html>

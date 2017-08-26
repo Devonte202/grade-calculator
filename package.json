@@ -1,0 +1,22 @@
+{
+  "name": "grade-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "grade-calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devonte202/grade-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devonte202/grade-calculator/issues"
+  },
+  "homepage": "https://github.com/Devonte202/grade-calculator#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
