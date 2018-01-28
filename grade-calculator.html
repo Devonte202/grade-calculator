@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="grade-calculator.js"></script>
@@ -24,7 +23,7 @@
       <h2>
         Input Data Here
       </h2>
-        <table class="table table-hover">
+        <table id="inputTable" class="table table-hover">
           <thead>
             <tr>
               <th>Aspect</th>
@@ -34,7 +33,7 @@
           </thead>
           <!--Data Input Section-->
           <tbody>
-            <tr>
+            <tr id="tableItem">
               <td>
                 <form>
                       <input list="aspects" name="aspects">
@@ -61,7 +60,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr id="tableItem">
               <td>
                 <form>
                       <input list="aspects" name="aspects">
@@ -88,7 +87,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr id="tableItem">
               <td>
                 <form>
                       <input list="aspects" name="aspects">
@@ -116,6 +115,7 @@
             </tr>
           </tbody>
         </table>
+        <button type="button" id="addAspect" class="btn btn-primary">Add Another</button>
     </div>
   <!--End of Input Section-->
 
@@ -126,7 +126,9 @@
       <div class="finalGrade"></div>
     </div>
 
+    <button type="button" id="calculate" class="btn btn-success">Calculate</button>
 
   </body>
 
 </html>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>

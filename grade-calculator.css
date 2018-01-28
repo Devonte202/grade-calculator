@@ -4,7 +4,7 @@
 
 #outputSection{
   border: solid green 5px;
-  height: 259px;
+  height: 303px;
 }
 
 .finalGrade{
@@ -12,4 +12,15 @@
   width: 150px;
   border: dotted black 3px;
   margin-left: 300px;
+}
+
+#calculate{
+  margin-left: 45%;
+  margin-top: 30px;
+  height: 50px;
+  width: 135px;
+}
+
+#addAspect{
+  margin-bottom: 10px;
 }
