@@ -1,1 +1,15 @@
+#inputSection{
+  border: solid black 5px;
+}
 
+#outputSection{
+  border: solid green 5px;
+  height: 259px;
+}
+
+.finalGrade{
+  height: 150px;
+  width: 150px;
+  border: dotted black 3px;
+  margin-left: 300px;
+}

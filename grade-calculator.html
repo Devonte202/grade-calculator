@@ -10,16 +10,20 @@
   </head>
 
   <body>
-    <!--Jumbotron -->
+<!--Jumbotron -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-3">Grade Calculator</h1>
         <p class="lead">Calculate your grade in any class based on how you've performed and how you predict you will perform in the future </p>
       </div>
     </div>
-    <!-- End of Jumbotron -->
-    <div class="col-md-6">
-      <h2>Change to user input</h2>
+<!-- End of Jumbotron -->
+
+<!--Beginning of Input Section-->
+    <div class="col-md-6" id="inputSection">
+      <h2>
+        Input Data Here
+      </h2>
         <table class="table table-hover">
           <thead>
             <tr>
@@ -28,6 +32,7 @@
               <th>Grade recieved</th>
             </tr>
           </thead>
+          <!--Data Input Section-->
           <tbody>
             <tr>
               <td>
@@ -44,9 +49,18 @@
                     </datalist>
                 </form>
               </td>
-              <td>Change to user percentage</td>
-              <td>Change to user input</td>
+              <td>
+                <form>
+                      <input class="percentInput">
+                </form>
+              </td>
+              <td>
+                <form>
+                      <input class="gradeInput">
+                </form>
+              </td>
             </tr>
+
             <tr>
               <td>
                 <form>
@@ -62,9 +76,18 @@
                     </datalist>
                 </form>
               </td>
-              <td>Change to user percentage</td>
-              <td>Change to user input</td>
+              <td>
+                <form>
+                      <input class="percentInput">
+                </form>
+              </td>
+              <td>
+                <form>
+                      <input class="gradeInput">
+                </form>
+              </td>
             </tr>
+
             <tr>
               <td>
                 <form>
@@ -80,16 +103,30 @@
                     </datalist>
                 </form>
               </td>
-              <td>Change to user percentage</td>
-              <td>Change to user input</td>
-            </tr>
-            <tr>
-              <td>Predicted Grade</td>
-              <td>Change to calculated output</td>
+              <td>
+                <form>
+                      <input class="percentInput">
+                </form>
+              </td>
+              <td>
+                <form>
+                      <input class="gradeInput">
+                </form>
+              </td>
             </tr>
           </tbody>
         </table>
     </div>
+  <!--End of Input Section-->
+
+  <!--Beginning of Output Section-->
+
+    <div class="col-md-6" id="outputSection">
+      <h2>Your Predicted Grade</h2>
+      <div class="finalGrade"></div>
+    </div>
+
+
   </body>
 
 </html>
