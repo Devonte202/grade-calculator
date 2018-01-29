@@ -21,9 +21,9 @@
 <!--Beginning of Input Section-->
     <div class="col-md-6" id="inputSection">
       <h2>
-        Input Data Here
+          Input Data Here
       </h2>
-        <table id="inputTable" class="table table-hover">
+      <table id="inputTable" class="table table-hover">
           <thead>
             <tr>
               <th>Aspect</th>
@@ -32,8 +32,8 @@
             </tr>
           </thead>
           <!--Data Input Section-->
-          <tbody>
-            <tr id="tableItem">
+          <tbody id="table">
+            <tr class="tableItem">
               <td>
                 <form>
                       <input list="aspects" name="aspects">
@@ -49,18 +49,13 @@
                 </form>
               </td>
               <td>
-                <form>
-                      <input class="percentInput">
-                </form>
+                <input class="percentInput">
               </td>
               <td>
-                <form>
-                      <input class="gradeInput">
-                </form>
+                <input class="gradeInput">
               </td>
             </tr>
-
-            <tr id="tableItem">
+            <tr class="tableItem">
               <td>
                 <form>
                       <input list="aspects" name="aspects">
@@ -76,18 +71,13 @@
                 </form>
               </td>
               <td>
-                <form>
-                      <input class="percentInput">
-                </form>
+                <input class="percentInput">
               </td>
               <td>
-                <form>
-                      <input class="gradeInput">
-                </form>
+                  <input class="gradeInput">
               </td>
             </tr>
-
-            <tr id="tableItem">
+            <tr class="tableItem">
               <td>
                 <form>
                       <input list="aspects" name="aspects">
@@ -124,7 +114,9 @@
 
     <div class="col-md-6" id="outputSection">
       <h2>Your Predicted Grade</h2>
-      <div class="finalGrade"></div>
+      <div id="finalGrade">
+         <p id="gradeText"></p>
+      </div>
     </div>
 
     <button type="button" id="calculate" class="btn btn-success">Calculate</button>

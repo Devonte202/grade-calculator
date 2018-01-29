@@ -1,7 +1,10 @@
 $(document).ready(function(){
+  var percentageArray = [];
+  var gradeArray = [];
+
 // Start of add aspect button code
 $("#addAspect").click(function(){
-    $("#inputTable").append("\
+    $("#table").append("\
    <tr class='tableItem'>\
      <td>\
        <form>\
@@ -42,18 +45,37 @@ $("#addAspect").click(function(){
     //  return Grade ;
     //}
    //console.log("Calculus " + calcGrade(84.72,77,55,82).toFixed(4));
-   // FIGURE OUT HOW TO MAKE THIS LOGIC DYNAMIC 
-
+   // FIGURE OUT HOW TO MAKE THIS LOGIC DYNAM
 // Code written here is to check to see if the data in forms was being collected
    var percentages = $(".percentInput");
+
    $("#calculate").click(function(){
      var sum = 0;
+     percentageArray = [];
+     gradeArray = [];
 
-$('.percentInput').each(function(){
-    sum += parseInt(this.value);
-});
-      console.log(sum);
+
+
+     $('.percentInput').each(function(){
+       var currentPercent = this.value;
+       percentageArray.push(currentPercent / 100);
+
+    });
+
+    $('.gradeInput').each(function () {
+      var currentGrade = this.value;
+      gradeArray.push(currentGrade);
+
+
+   
+   });
+
+      var sum = 0;
+      for(var i=0; i< percentageArray.length; i++) {
+               sum += percentageArray[i]*gradeArray[i];
+          }
+
+    $("#gradeText").text(sum);
 
      });
-
 });
