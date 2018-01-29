@@ -8,10 +8,11 @@
 }
 
 #finalGrade{
-  height: 150px;
-  width: 150px;
-  border: dotted black 3px;
-  margin-left: 300px;
+    height: 150px;
+    width: 180px;
+    border: ridge #3c763d 5px;
+    margin-left: 300px;
+    border-radius: 15px;
 }
 
 #calculate{
@@ -24,10 +25,22 @@
 #addAspect{
   margin-bottom: 10px;
 }
-#deleteAspect{
+#clearButton{
   margin-bottom: 10px;
 }
 
 #gradeText{
   font-size: 70px;
+  text-align: center;
+  padding: 13%;
+}
+
+.aspectDelete{
+  border-radius: 80px;
+}
+
+#xSymbol{
+  position: relative;
+  right: 2px;
+  top: 1px;
 }
