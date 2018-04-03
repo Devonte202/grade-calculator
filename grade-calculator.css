@@ -1,7 +1,15 @@
+body{
+  font-size: 7px;
+}
+
+
 #inputSection{
   border: solid black 5px;
 }
 
+th{
+  font-size: 10px;
+}
 #outputSection{
   border: solid green 5px;
   height: 303px;
@@ -11,13 +19,12 @@
     height: 150px;
     width: 180px;
     border: ridge #3c763d 5px;
-    margin-left: 300px;
     border-radius: 15px;
 }
 
 #calculate{
-  margin-left: 45%;
-  margin-top: 30px;
+  position: relative;
+  top: 5px;
   height: 50px;
   width: 135px;
 }

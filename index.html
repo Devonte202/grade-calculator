@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="bootstrap.min.css">
     <script src="bootstrap.min.js"></script>
     <script src="jquery.js"></script>
@@ -20,7 +21,7 @@
 <!-- End of Jumbotron -->
 
 <!--Beginning of Input Section-->
-    <div class="col-md-6" id="inputSection">
+    <div class="col-md-12" id="inputSection">
       <h2>
           Input Data Here
       </h2>
@@ -43,14 +44,13 @@
 
   <!--Beginning of Output Section-->
 
-    <div class="col-md-6" id="outputSection">
+    <div class="col-md-12" id="outputSection">
       <h2>Your Predicted Grade</h2>
       <div id="finalGrade">
          <p id="gradeText"></p>
       </div>
+        <button type="button" id="calculate" class="btn btn-success">Calculate</button>
     </div>
-
-    <button type="button" id="calculate" class="btn btn-success">Calculate</button>
 
   </body>
 
