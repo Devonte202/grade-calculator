@@ -2,6 +2,10 @@ body{
   font-size: 7px;
 }
 
+input {
+  width: 37%;
+  height: 5%;
+}
 
 #inputSection{
   border: solid black 5px;
@@ -44,6 +48,8 @@ th{
 
 .aspectDelete{
   border-radius: 80px;
+  height: 20px;
+  width: 20px;
 }
 
 #xSymbol{
